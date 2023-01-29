@@ -1,0 +1,23 @@
+syntax = "proto3";
+package product_group.v1;
+
+option go_package = "./productGroup";
+
+service ProductGroupService {
+  rpc IndexProductGroups(IndexProductGroupsRequest) returns (IndexProductGroupsResponse);
+  rpc DeleteProductGroup(DeleteProductGroupRequest) returns (DeleteProductGroupResponse);
+  rpc GetSynonym(GetSynonymRequest) returns (GetSynonymResponse);
+  rpc CreateSynonym(CreateSynonymRequest) returns (CreateSynonymResponse);
+  rpc DeleteSynonym(DeleteSynonymRequest) returns (DeleteSynonymResponse);
+}
+
+message IndexProductGroupsRequest {}
+message IndexProductGroupsResponse {}
+message DeleteProductGroupRequest {}
+message DeleteProductGroupResponse {}
+message GetSynonymRequest {}
+message GetSynonymResponse {}
+message CreateSynonymRequest {}
+message CreateSynonymResponse {}
+message DeleteSynonymRequest {}
+message DeleteSynonymResponse {}

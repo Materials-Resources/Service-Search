@@ -1,0 +1,11 @@
+syntax = "proto3";
+package product.v1;
+
+option go_package = "./product";
+
+service ProductService {
+  rpc IndexProducts(IndexProductsRequest) returns (IndexProductsResponse);
+}
+
+message IndexProductsRequest {}
+message IndexProductsResponse {}
