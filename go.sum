@@ -2,10 +2,10 @@ buf.build/gen/go/materials-resources/prophet/grpc/go v1.2.0-20230120194720-59bed
 buf.build/gen/go/materials-resources/prophet/grpc/go v1.2.0-20230120194720-59bedeb1ab9b.4/go.mod h1:xAjca+TqnDGUa7B9gmtP7RU6bDRzow58Y9Ipn44fZBw=
 buf.build/gen/go/materials-resources/prophet/protocolbuffers/go v1.28.1-20230120194720-59bedeb1ab9b.4 h1:RYGSBO5vZHcZy6PKOD+/gEjX7BlEIbWHXJ6c4gmI5fY=
 buf.build/gen/go/materials-resources/prophet/protocolbuffers/go v1.28.1-20230120194720-59bedeb1ab9b.4/go.mod h1:SPvQrw53av6/3zLlgHIcdNBOopThmnZuMpKPd4B524I=
-buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230127173850-53602a9d59bb.4 h1:Iys/QGklDkK3V0y723EPKhYnrCOiuMQC0ZvSYZWGgQc=
-buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230127173850-53602a9d59bb.4/go.mod h1:6vgwKp4SPh9IhBXACNHXQhCTXEhpltC+g3kbPFCXGGQ=
-buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230127173850-53602a9d59bb.4 h1:RVQp+yLEznAJhEpW97dl52/OuX0NVpCthMWZu5In2MQ=
-buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230127173850-53602a9d59bb.4/go.mod h1:jy8wWcXHE+ZM6CHW8kqGUzW1R0PlnHgSoF5ingu+OSw=
+buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230130203904-f7f6449dc9f5.4 h1:LVCVQOcwZ51H/e9C3QBIWxwiZU9dkJV1Ao+/0/kFbzM=
+buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230130203904-f7f6449dc9f5.4/go.mod h1:ajoms3jqbSvEpA4R0k72j/cZFUTGyvCpJ2HCE34kTsA=
+buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230130203904-f7f6449dc9f5.4 h1:ajEXV8F1lTNxLhGTKrExreim9JKf3DFHFZaNIEWZnjQ=
+buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230130203904-f7f6449dc9f5.4/go.mod h1:jy8wWcXHE+ZM6CHW8kqGUzW1R0PlnHgSoF5ingu+OSw=
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=

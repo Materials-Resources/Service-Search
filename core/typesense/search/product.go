@@ -4,6 +4,8 @@ import (
 	"github.com/typesense/typesense-go/typesense"
 	"github.com/typesense/typesense-go/typesense/api"
 	"log"
+	"math"
+	"strconv"
 )
 
 func Products(client *typesense.Client, query string) (results ProductSearchResults) {
@@ -22,6 +24,21 @@ func Products(client *typesense.Client, query string) (results ProductSearchResu
 	searchRes, err := client.Collection("Products").Documents().Search(params)
 	if err != nil {
 		log.Println(err)
+	}
+
+	results.currentPage = int32(*(searchRes.Page))
+
+	results.totalPages = int32(math.Ceil(float64(int32(*(searchRes.Found) / searchRes.RequestParams.PerPage))))
+
+	for _, facet := range *(searchRes.FacetCounts) {
+		if *facet.FieldName == "product_group_id" {
+			for _, productGroupFacet := range *(facet.Counts) {
+				results.facets.productGroups = append(results.facets.productGroups, &resultsProductGroupFacet{
+					name:  *productGroupFacet.Value,
+					count: strconv.Itoa(*productGroupFacet.Count),
+				})
+			}
+		}
 	}
 
 	for _, hit := range *(searchRes.Hits) {

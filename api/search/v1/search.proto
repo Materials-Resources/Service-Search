@@ -26,7 +26,7 @@ message SearchAllRequest {
   // Filters by selected product groups
   repeated string product_groups = 2;
   // Page number to request
-  string page_number = 3;
+  int32 page_number = 3;
 }
 message SearchAllResponse {
   message Facets {
@@ -55,5 +55,7 @@ message SearchAllResponse {
   // A list of products the search returns
   repeated Results search_results = 2;
   // Total amount of pages the query has
-  string total_pages = 3;
+  int32 total_pages = 3;
+  // Current page requested
+  int32 current_page = 4;
 }

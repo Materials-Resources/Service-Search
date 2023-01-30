@@ -5,8 +5,8 @@ go 1.19
 require (
 	buf.build/gen/go/materials-resources/prophet/grpc/go v1.2.0-20230120194720-59bedeb1ab9b.4
 	buf.build/gen/go/materials-resources/prophet/protocolbuffers/go v1.28.1-20230120194720-59bedeb1ab9b.4
-	buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230127173850-53602a9d59bb.4
-	buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230127173850-53602a9d59bb.4
+	buf.build/gen/go/materials-resources/search/grpc/go v1.2.0-20230130203904-f7f6449dc9f5.4
+	buf.build/gen/go/materials-resources/search/protocolbuffers/go v1.28.1-20230130203904-f7f6449dc9f5.4
 	github.com/typesense/typesense-go v0.6.2
 	google.golang.org/grpc v1.52.0
 )
