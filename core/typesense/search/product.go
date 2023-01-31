@@ -12,6 +12,7 @@ func Products(client *typesense.Client, query string) (results ProductSearchResu
 	facets := "product_group_id"
 	prefix := "false"
 	perPage := 20
+	page := 1
 
 	params := &api.SearchCollectionParams{
 		Q:       query,
@@ -19,6 +20,7 @@ func Products(client *typesense.Client, query string) (results ProductSearchResu
 		FacetBy: &facets,
 		Prefix:  &prefix,
 		PerPage: &perPage,
+		Page:    &page,
 	}
 
 	searchRes, err := client.Collection("Products").Documents().Search(params)
