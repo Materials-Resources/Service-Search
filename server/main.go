@@ -23,7 +23,7 @@ var client *typesense.Client
 func main() {
 
 	client = typesense.NewClient(
-		typesense.WithServer("localhost:8108"),
+		typesense.WithServer("http://localhost:8108"),
 		typesense.WithAPIKey(os.Getenv("TS_API_KEY")),
 	)
 	schemas.RegisterSchemas(client)
