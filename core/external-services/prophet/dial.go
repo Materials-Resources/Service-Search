@@ -13,7 +13,7 @@ func Dial() {
 
 	opts = append(opts, grpc.WithInsecure())
 
-	conn, err := grpc.Dial("localhost:50058", opts...)
+	conn, err := grpc.Dial("prophet:50058", opts...)
 	if err != nil {
 		log.Fatalf("there was an issue connecting to the prophet service: %v", err)
 	}
